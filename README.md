@@ -1,7 +1,7 @@
 # Movie Recommender System
 
 This is a hybrid movie recommender system using **Collaborative Filtering (SVD)** and **Content-Based Filtering (Cosine Similarity on genres)** built with Python.  
-It uses the **MovieLens dataset** (`ml-latest-small` or `ml-latest`) and provides recommendations via a **Streamlit web app**.
+It utilizes the **MovieLens dataset** (`ml-latest-small`) and offers recommendations through a **Streamlit web app**.
 
 ---
 
@@ -11,36 +11,6 @@ It uses the **MovieLens dataset** (`ml-latest-small` or `ml-latest`) and provide
 - **Content-Based Filtering:** Find movies similar to a given title using genres.  
 - **Hybrid Recommendations:** Combine collaborative and content-based suggestions.  
 - **Debugging:** Optional debug prints for genre matrix, cosine similarity, and top recommendations.
-
----
-
-## Folder Structure
-
-movie-recommender/
-│
-├─ src/
-│ ├─ train.py # Training script
-│ ├─ test_recommend.py # Test script for recommendations
-│ ├─ utils.py # Dataset loading and helper functions
-│ ├─ content_based.py # Content-based recommender
-│ ├─ collab_svd.py # SVD collaborative filtering
-│
-├─ models/ # Saved models and matrices
-│ ├─ svd.pkl
-│ ├─ cosine_sim.npy
-│ ├─ mappings.joblib
-│ └─ tfidf_content.joblib
-│
-├─ ml-latest-small/ # MovieLens dataset (or ml-latest/)
-│ ├─ movies.csv
-│ ├─ ratings.csv
-│ ├─ tags.csv
-│ └─ links.csv
-│
-├─ app.py # Streamlit web app
-├─ requirements.txt # Python dependencies
-└─ README.md
-
 
 ---
 
@@ -95,33 +65,26 @@ Launch the Streamlit app:
 streamlit run app.py
 ```
 
-Enter a user ID to get collaborative filtering recommendations.
+1. Enter a user ID to get collaborative filtering recommendations.
+2. Enter a movie title to get content-based similar movies.
+3. Debug messages will appear in the terminal if enabled.
 
-Enter a movie title to get content-based similar movies.
+## Dependencies
 
-Debug messages will appear in the terminal if enabled.
-
-Dependencies
-
-Python 3.10+
-
-pandas
-
-numpy
-
-scikit-learn
-
-surprise
-
-joblib
-
-streamlit
+- Python 3.10+
+- pandas
+- numpy
+- scikit-learn
+- surprise
+- joblib
+- streamlit
 
 Install all dependencies with:
 ```bash
 pip install -r requirements.txt
 ```
 
-License
+## License
 
 This project is open-source under the MIT License.
+
