@@ -52,13 +52,13 @@ This will save models to ./models.
 
 Debug prints show genre matrix, unique combinations, and cosine similarity samples.
 
-Testing Recommendations
+## Testing Recommendations
 
 Test SVD and content-based recommendations in the terminal:
 ```bash
 python -m src.test_recommend
 ```
-Running the Web App
+## Running the Web App
 
 Launch the Streamlit app:
 ```bash
@@ -87,4 +87,5 @@ pip install -r requirements.txt
 ## License
 
 This project is open-source under the MIT License.
+
 
