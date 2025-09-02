@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pycache/
+
+# Virtual environment
+.venv/
+
+# Model and temporary files
+models/
+*.pkl
+*.joblib
+*.npy
+*.h5
+
+# Dataset files (optional: if you want to avoid pushing large datasets)
+ml-latest-small/
+
+# Streamlit cache
+.streamlit/
